@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Lab Setup</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 2px solid #ccc;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.tool {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tool span {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+button {
+    background: #ccc;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h2 {
+    background: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.steps {
+    list-style: none;
+    padding: 0;
+}
+
+.steps li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.start-btn {
+    background: black;
+    color: white;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Lab Tools</h2>
+            <div class="tool"><span>🔬</span> <button>Microscope</button></div>
+            <div class="tool"><span>⚗️</span> <button>Beaker</button></div>
+            <div class="tool"><span>🧪</span> <button>Test Tube</button></div>
+            <div class="tool"><span>🕶️</span> <button>VR Headset</button></div>
+        </aside>
+        
+        <main class="content">
+            <h2>Set up the Virtual Lab Environment</h2>
+            <ul class="steps">
+                <li><input type="checkbox"> <strong>Step 1</strong> - Choose Your Virtual Lab Platform</li>
+                <li><input type="checkbox"> <strong>Step 2</strong> - Set Up Virtual Machines (if using VMs)</li>
+                <li><input type="checkbox"> <strong>Step 3</strong> - Set Up Virtual Lab Software</li>
+                <li><input type="checkbox"> <strong>Step 4</strong> - Configure Networking (if needed)</li>
+                <li><input type="checkbox"> <strong>Step 5</strong> - Test your virtual setup</li>
+                <li><input type="checkbox"> <strong>Step 7</strong> - Backup Your Virtual Lab Environment</li>
+            </ul>
+            <button class="start-btn">Start Setting Up</button>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .filter-section {
+            width: 20%;
+            background: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .filter-section label {
+            display: block;
+            margin: 5px 0;
+        }
+        .cards {
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .card {
+            width: 30%;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pagination button {
+            margin: 5px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="filter-section">
+            <h3>Filter By Category</h3>
+            <label><input type="checkbox"> Physics</label>
+            <label><input type="checkbox"> Chemistry</label>
+            <label><input type="checkbox"> Biology</label>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="atomic.jpg" alt="Atomic Structure" width="400" height="200">
+                <h3>Atomic Structure</h3>
+                <p>In physics, an atom is the
+                    smallest unit of matter that
+                    retains the properties of a 
+                    chemical element, consisting
+                    of a central nucleus made up
+                    of positively charged protons
+                    and neutral neutrons,
+                    surrounded by a cloud of
+                    negatively charged electrons
+                    that orbit the nucleus;
+                    essentially, the building
+                    block of all matter. </p>
+                <button>Start Experiment</button>
+            </div>
+            <div class="card">
+                <img src="chemical.jpg" alt="Chemical Experiments" width="400" height="200">
+                <h3>Chemical Experiments</h3>
+                <p>During a chemical reaction both
+                    the form and composition of
+                    matter are changed. Old 
+                    substances are converted to 
+                    new substances, which have 
+                    unique physical and chemical 
+                    properties of their own. To 
+                    determine these mole-to-mole
+                    ratios experimentally, 
+                    a quantitative analysis of both
+                    reactions is required.2</p>
+                <button>Start Experiment</button>
+            </div>
+            <div class="card">
+                <img src="biology.jpg" alt="Biology Experiments" width="400" height="200">
+                <h3>Biology Experiments</h3>
+                <p>Biology experiments are
+                     scientific tests that study
+                     the behavior, physiology, 
+                    and genetics of living
+                     organisms. They are usually
+                     conducted in a laboratory
+                     under controlled conditions. </p><br><br><br>
+                <button>Start Experiment</button>
+            </div>
+        </div>
+    </div>
+    <div class="pagination">
+        <button>&lt;&lt;</button>
+        <button>&lt;</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>...</button>
+        <button>8</button>
+        <button>&gt;&gt;</button>
+    </div>
+</body>
+</html>
